@@ -12,11 +12,13 @@
         <div>
             <div>
                 <input
-                    type="password"
+                    type="text"
                     name="locker_password"
                     id="locker_password"
                     placeholder="Mot de passe"
-                    maxlength={4}
+                    required
+                    maxlength="4"
+                    minlength="4"
                     pattern="[0-9]{4}"
                 >
                 <div
@@ -28,10 +30,10 @@
                         gap: 0.5rem;
                     "
                 >
-                    <input type="checkbox" onclick="showPassword()">
-                    <label for="show_password">Afficher le mot de passe</label>
+                    <input type="checkbox" onclick="hidePassword()">
+                    <label for="show_password">Cacher le mot de passe</label>
                 </div>
-                
+
                 <div class="pave-numerique" role="group" aria-label="Second group">
                     <button class="btn btn-secondary" value="1">1</button>
                     <button class="btn btn-secondary" value="2">2</button>

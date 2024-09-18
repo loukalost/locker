@@ -11,7 +11,7 @@ include ("ConnectBDD.php");
              $result = $conn->query("SELECT password, status, name FROM `locker` WHERE `password`='$passwordLocker'");
              $result = $result->fetch_assoc();
              if(is_null($result)) {
-             die( "Pas le bon code frerot");
+             die( "Pas le bon code frérot");
              }
 
              echo json_encode($result);
